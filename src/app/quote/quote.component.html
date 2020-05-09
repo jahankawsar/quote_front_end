@@ -1,0 +1,33 @@
+<div class="panel panel-primary">
+    <div class="panel-heading">
+        Quotes
+    </div>
+    <div class="panel-body">
+        <div class="table-responsive">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <td></td>
+                        <th>ID</th>
+                        <th>Quote</th>
+                        <th>Author Name</th>
+                        <th>Book Name</th>
+                        <th>Created By</th>
+                        <th>Create Date</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let quote of quotes">
+                        <td></td>
+                        <td><a href="">{{quote.id}}</a></td>
+                        <td>{{quote.quote}}</td>
+                        <td>{{quote.authorFirstName}} {{quote.authorLastName}}</td>
+                        <td>{{quote.bookName}}</td>
+                        <td>{{quote.createdBy}}</td>
+                        <td>{{quote.createDate}}</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
